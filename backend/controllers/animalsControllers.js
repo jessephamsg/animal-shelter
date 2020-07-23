@@ -1,5 +1,8 @@
+const repositories = require('../repositories/animalRepositories');
+
 module.exports = {
-    getAll (req, res) {
-        res.send('hey');
+    async getAll (req, res) {
+        const data = await repositories.getAll();
+        res.send(data);
     },
 }
