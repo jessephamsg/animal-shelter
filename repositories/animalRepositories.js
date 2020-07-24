@@ -4,5 +4,8 @@ module.exports = {
     async getAll () {
         const data = await db.animals.find().toArray();
         return data
+    },
+    async getOne () {
+        
     }
 }
